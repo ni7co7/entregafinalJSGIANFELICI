@@ -48,18 +48,31 @@ footer {
   color: #fff;
   padding-top: 4rem;
   padding-bottom: 2rem;
-  display: block;
-}
-footer .icono-redes {
-  display: flex;
-  flex-direction: row;
 }
 
 .pie {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+.pie h3 {
+  font-size: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+}
+
+.icono-redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icono-redes svg {
+  width: 5%;
+  height: 5%;
+}
+.icono-redes p {
+  margin-left: 8rem;
 }
 
 .contenedor-hero {
