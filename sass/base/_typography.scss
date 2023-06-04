@@ -1,0 +1,17 @@
+// Estilos de tipografía
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+  
+a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: $link-color;
+    letter-spacing: 5px;
+  
+    &:hover {
+      background-color: $link-hover-color;
+  }
+}
+  

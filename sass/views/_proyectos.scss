@@ -1,0 +1,21 @@
+
+
+.row{
+    img{
+        padding: 4rem;   
+    } 
+}
+
+
+@media (max-width: 575px) {
+    .container{
+        width: auto;
+        height: auto;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: auto;
+        height: auto;
+    }
+}

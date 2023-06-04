@@ -1,0 +1,16 @@
+// Estilos del pie de página
+
+
+footer{
+    color: $base-color;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    display: block;
+    background-color: $body-color; 
+}
+.pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
