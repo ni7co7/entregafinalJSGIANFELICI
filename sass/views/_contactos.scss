@@ -1,0 +1,46 @@
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    font-size: xx-large;
+    text-transform: lowercase;
+    margin-top: 2rem;
+}
+.campo{
+     margin-left: 2rem;
+    & input{
+        font-size: medium;
+        text-transform: lowercase;
+        border-color: $primary-color;
+        border:none;
+        border-bottom:solid;
+        background-color: $base-color;
+        
+    }
+    & textarea{
+        border: 0;
+        font-size: x-large;
+        background-color: $base-color;
+        
+    }
+}
+.boton{
+    font-size: large;
+    margin-top: 1rem;
+    & input{
+        background-color: $primaryl-color;
+        width: 200px;
+        height: 50px;
+        border-style: solid;
+        border-color: $primary-color;
+        border-radius: 10%;
+        
+    }
+}
+    
+
+
+

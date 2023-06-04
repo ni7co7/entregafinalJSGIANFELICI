@@ -174,4 +174,56 @@ svg {
     width: auto;
     height: auto;
   }
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  font-size: xx-large;
+  text-transform: lowercase;
+  margin-top: 2rem;
+}
+
+.campo {
+  margin-left: 2rem;
+}
+.campo input {
+  font-size: medium;
+  text-transform: lowercase;
+  border-color: rgb(182, 232, 227);
+  border: none;
+  border-bottom: solid;
+  background-color: #fff;
+}
+.campo textarea {
+  border: 0;
+  font-size: x-large;
+  background-color: #fff;
+}
+
+.boton {
+  font-size: large;
+  margin-top: 1rem;
+}
+.boton input {
+  background-color: rgba(211, 234, 232, 0.375);
+  width: 200px;
+  height: 50px;
+  border-style: solid;
+  border-color: rgb(182, 232, 227);
+  border-radius: 10%;
+}
+
+.container-fluid img {
+  border-radius: 50%;
+}
+
+h5 {
+  font-weight: bolder;
+}
+
+h6 {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */
