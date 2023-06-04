@@ -39,15 +39,17 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     /* Estilos para tabletas */
     .contenedor-hero {
-      max-width: 100%;
-      height: auto;
+        display: flex;
+        flex-direction: row;
+
     }
 }
   
 @media (min-width: 1024px) {
     /* Estilos para escritorio */
     .contenedor-hero {
-      max-width: 100%;
-      height: auto;
+        display: flex;
+        flex-direction: row;
+
     }
 }
