@@ -70,8 +70,8 @@ footer {
   margin: 0.5rem;
 }
 .icono-redes svg {
-  width: 15%;
-  height: auto;
+  max-width: 15%;
+  max-height: auto;
 }
 .icono-redes p {
   margin-left: 2rem;
@@ -80,15 +80,21 @@ footer {
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Estilos para tabletas */
   .icono-redes {
-    max-width: 50%;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
   }
 }
 @media (min-width: 1024px) {
   /* Estilos para escritorio */
   .icono-redes {
-    max-width: 50%;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
   }
 }
 .contenedor-hero {
