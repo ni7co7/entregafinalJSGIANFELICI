@@ -25,9 +25,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-header.bg-body-tertiary {
-  background-color: black;
-}
 
 @media (min-width: 768px) {
   header {
@@ -55,10 +52,14 @@ footer {
   align-items: center;
 }
 .pie h3 {
-  font-size: 3.2rem;
+  font-size: xx-large;
   display: flex;
   flex-direction: column;
-  margin-right: 10rem;
+  font-weight: bolder;
+  margin-left: 1rem;
+}
+.pie p {
+  margin-left: 1.5rem;
 }
 
 .icono-redes {
@@ -66,15 +67,30 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 0.5rem;
 }
 .icono-redes svg {
-  width: 5%;
-  height: 5%;
+  width: 15%;
+  height: auto;
 }
 .icono-redes p {
-  margin-left: 8rem;
+  margin-left: 2rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tabletas */
+  .icono-redes {
+    max-width: 50%;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  /* Estilos para escritorio */
+  .icono-redes {
+    max-width: 50%;
+    height: auto;
+  }
+}
 .contenedor-hero {
   display: flex;
   flex-direction: column;
@@ -103,10 +119,12 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: blueviolet;
-  height: 30rem;
 }
-
-.aviso h1, h2, h3 {
+.aviso h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.aviso h4 {
   text-align: center;
   margin: 2rem;
 }

@@ -14,7 +14,7 @@
 }
 .simbolo{  
     font-size: 10rem; /* Span */
-}
+} 
 
 .aviso{
     color: $base-color;
@@ -23,11 +23,15 @@
     justify-content: center;
     align-items: center;
     background-color: $contrast-color;
-    height: 30rem;
-}
-.aviso h1, h2, h3 {
-    text-align: center;
-    margin: 2rem;
+    & h2{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    & h4{
+        text-align: center;
+        margin: 2rem;
+
+    }
 }
 @media (max-width: 767px) {
     /* Estilos para dispositivos móviles */

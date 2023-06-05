@@ -12,10 +12,14 @@ footer{
     align-items: center;
 
     & h3{
-        font-size: 3.2rem;
+        font-size: xx-large;
         display: flex;
         flex-direction: column;
-        margin-right: 10rem;
+        font-weight: bolder;
+        margin-left: 1rem;
+    }
+    & p{
+        margin-left: 1.5rem;
     }
 }
 .icono-redes{
@@ -23,12 +27,29 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: .5rem;
 
     & svg{
-        width: 5%;
-        height: 5%;
+        width: 15%;
+        height: auto;
     }
     & p{
-        margin-left: 8rem;
+        margin-left: 2rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tabletas */
+    .icono-redes {
+        max-width: 50%;
+        height: auto;
+
+    }
+}
+@media (min-width: 1024px) {
+    /* Estilos para escritorio */
+    .icono-redes {
+        max-width: 50%;
+        height: auto;
+
     }
 }

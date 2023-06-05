@@ -4,9 +4,6 @@ header{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-     &.bg-body-tertiary{
-        background-color: $link-color;
-    }
 }
 
 @media (min-width: 768px) {
