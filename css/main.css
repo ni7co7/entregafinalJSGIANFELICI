@@ -43,9 +43,10 @@ header {
 footer {
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 1rem;
   color: #fff;
   background-color: black;
-  padding: 2REM;
+  padding: 1rem;
 }
 
 .pie H3 {
@@ -57,12 +58,9 @@ footer {
   font-weight: lighter;
 }
 
-.icono-redes {
-  padding: 2rem;
-}
 .icono-redes svg {
   width: auto;
-  height: 100%;
+  height: auto;
 }
 
 .contenedor-hero {
