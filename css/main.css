@@ -41,62 +41,30 @@ header {
   }
 }
 footer {
-  background-color: black;
+  display: grid;
+  grid-template-columns: 50% 50%;
   color: #fff;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  background-color: black;
+  padding: 2REM;
 }
 
-.pie {
-  display: flex;
-  align-items: center;
-}
-.pie h3 {
+.pie H3 {
   font-size: xx-large;
-  display: flex;
-  flex-direction: column;
   font-weight: bolder;
-  margin-left: 1rem;
 }
-.pie p {
-  margin-left: 1.5rem;
+.pie P {
+  font-size: smaller;
+  font-weight: lighter;
 }
 
 .icono-redes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem;
+  padding: 2rem;
 }
 .icono-redes svg {
-  max-width: 15%;
-  max-height: auto;
-}
-.icono-redes p {
-  margin-left: 2rem;
+  width: auto;
+  height: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos para tabletas */
-  .icono-redes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
-  }
-}
-@media (min-width: 1024px) {
-  /* Estilos para escritorio */
-  .icono-redes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
-  }
-}
 .contenedor-hero {
   display: flex;
   flex-direction: column;
@@ -105,6 +73,39 @@ footer {
   background-color: rgb(182, 232, 227);
 }
 
+@media (min-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  .contenedor-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tabletas */
+  .contenedor-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  /* Estilos para escritorio */
+  .contenedor-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+  }
+}
 .subtitulo {
   margin: 2rem;
   text-align: center;
@@ -135,27 +136,6 @@ footer {
   margin: 2rem;
 }
 
-@media (max-width: 767px) {
-  /* Estilos para dispositivos móviles */
-  .contenedor-hero {
-    max-width: 100%;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos para tabletas */
-  .contenedor-hero {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (min-width: 1024px) {
-  /* Estilos para escritorio */
-  .contenedor-hero {
-    display: flex;
-    flex-direction: row;
-  }
-}
 /* SERVICIOS */
 .display-1 {
   padding-top: 4rem;
