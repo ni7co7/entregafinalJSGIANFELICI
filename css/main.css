@@ -16,7 +16,10 @@ a {
   letter-spacing: 5px;
 }
 a:hover {
-  background-color: rgba(182, 232, 227, 0.427);
+  background-color: rgba(234, 245, 244, 0.427);
+}
+a .boton {
+  border: solid 10rem 255;
 }
 
 header {

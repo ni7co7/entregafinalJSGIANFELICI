@@ -13,5 +13,9 @@ a {
     &:hover {
       background-color: $link-hover-color;
   }
+    .boton{
+      border: solid 10rem red($color: red) ;
+
+  }
 }
   
