@@ -19,4 +19,7 @@ header{
         gap: 2rem;
         list-style: none;
     }
+    li:hover{
+        background-color: $link-hover-color;
+    }
 }
