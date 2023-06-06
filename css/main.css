@@ -74,7 +74,7 @@ footer {
   background-color: rgb(182, 232, 227);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 766px) {
   /* Estilos para dispositivos móviles */
   .contenedor-hero {
     display: flex;
@@ -87,6 +87,10 @@ footer {
 }
 @media (max-width: 767px) and (orientation: landscape) {
   .contenedor-hero img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: 100%;
     max-width: 100%;
