@@ -138,8 +138,22 @@ footer {
   font-size: 1.2rem;
 }
 
+@keyframes appear {
+  0% {
+    opacity: 0; /* Comienza con una opacidad de 0 (invisible) */
+  }
+  50% {
+    opacity: 1; /* Aumenta la opacidad a 1 (totalmente visible) a la mitad de la animación */
+  }
+  100% {
+    opacity: 0; /* Regresa la opacidad a 0 al final de la animación */
+  }
+}
+/* Span */
 .simbolo {
-  font-size: 8rem; /* Span */
+  font-size: 8rem;
+  color: blueviolet;
+  animation: appear 2.6s infinite; /* La animación 'appear' dura 2 segundos y se repite infinitamente */
 }
 
 .aviso {
