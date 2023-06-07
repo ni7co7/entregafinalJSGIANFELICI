@@ -55,18 +55,31 @@ footer {
   padding: 1rem;
 }
 
+/*estamos en contacto!*/
 .pie H3 {
   font-size: xx-large;
   font-weight: bolder;
+  margin-right: 10rem;
+  padding: 2rem;
 }
 .pie P {
   font-size: smaller;
   font-weight: lighter;
+  padding-bottom: 2rem;
+  margin-left: 0.5rem;
 }
 
+.icono-redes {
+  margin-right: 0.5rem;
+  margin-left: 0.2rem;
+}
 .icono-redes svg {
   width: auto;
   height: auto;
+  padding-bottom: 2rem;
+}
+.icono-redes p {
+  margin-right: 0.5REM;
 }
 
 .contenedor-hero {
@@ -141,10 +154,9 @@ footer {
 /* Span */
 .simbolo {
   font-size: 8rem;
+  animation: appear 3.6s infinite; /* La animación 'appear' dura 2.6 segundos y se repite infinitamente */
   color: #fff;
-  background-color: black;
-  animation: appear 2.6s infinite; /* La animación 'appear' dura 2.6 segundos y se repite infinitamente */
-  box-shadow: 6px 9px #f4ecec, 0em 0 1em blueviolet;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes appear {

@@ -5,20 +5,33 @@ footer{
     color: $base-color;
     background-color: $body-color;
     padding: 1rem;
+    
 }
+/*estamos en contacto!*/
 .pie{
     & H3{
         font-size: xx-large;
         font-weight: bolder;
+        margin-right: 10rem;
+        padding: 2rem;
     }
     & P{
         font-size: smaller;
         font-weight: lighter;
+        padding-bottom: 2rem;
+        margin-left: .5rem;
     }
 }
 .icono-redes{
+    margin-right: .5rem;
+    margin-left: .2rem;
+    
     & svg {
         width: auto;
         height: auto;
+        padding-bottom: 2rem;
+    }
+    & p{
+        margin-right: .5REM;
     }
 }
