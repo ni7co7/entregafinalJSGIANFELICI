@@ -7,3 +7,10 @@ h5 {
 h6{
     margin-bottom:2rem ;
 }
+
+.boton-pildora{
+  @include mx-boton-pildora;
+}
+    
+
+
