@@ -9,6 +9,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+li:hover {
+  background-color: rgb(182, 232, 227);
+}
+
 header {
   display: flex;
   flex-direction: column;
