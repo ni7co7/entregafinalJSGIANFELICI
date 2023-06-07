@@ -4,9 +4,6 @@
     justify-content: center;
     align-items: center;
     background-color: $primary-color;
-    img{
-     width: 100%;
-    }
 }
 @media (min-width: 766px) {
     /* Estilos para dispositivos móviles */
@@ -15,11 +12,13 @@
       flex-direction: row; 
       justify-content: center;
       align-items: center; 
-      max-width: 100%;
-      height: auto;
+     
+      img{
+        object-fit: contain;
+    }
     }
 }
-@media (max-width: 767px) and (orientation: landscape) {
+@media (max-width: 766px) and (orientation: landscape) {
     .contenedor-hero img {
       display: flex;
       flex-direction: row; 
@@ -27,7 +26,9 @@
       align-items: center;
       width: auto;
       height: 100%;
-      object-fit: contain;
+      img{
+        object-fit: contain;
+      }
     }
 }
 

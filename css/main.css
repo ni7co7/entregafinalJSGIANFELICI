@@ -76,9 +76,6 @@ footer {
   align-items: center;
   background-color: rgb(182, 232, 227);
 }
-.contenedor-hero img {
-  width: 100%;
-}
 
 @media (min-width: 766px) {
   /* Estilos para dispositivos móviles */
@@ -87,11 +84,13 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    height: auto;
+  }
+  .contenedor-hero img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
-@media (max-width: 767px) and (orientation: landscape) {
+@media (max-width: 766px) and (orientation: landscape) {
   .contenedor-hero img {
     display: flex;
     flex-direction: row;
@@ -99,6 +98,8 @@ footer {
     align-items: center;
     width: auto;
     height: 100%;
+  }
+  .contenedor-hero img img {
     -o-object-fit: contain;
        object-fit: contain;
   }
