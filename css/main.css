@@ -138,6 +138,15 @@ footer {
   font-size: 1.2rem;
 }
 
+/* Span */
+.simbolo {
+  font-size: 8rem;
+  color: #fff;
+  background-color: black;
+  animation: appear 2.6s infinite; /* La animación 'appear' dura 2.6 segundos y se repite infinitamente */
+  box-shadow: 6px 9px #f4ecec, 0em 0 1em blueviolet;
+}
+
 @keyframes appear {
   0% {
     opacity: 0; /* Comienza con una opacidad de 0 (invisible) */
@@ -149,13 +158,6 @@ footer {
     opacity: 0; /* Regresa la opacidad a 0 al final de la animación */
   }
 }
-/* Span */
-.simbolo {
-  font-size: 8rem;
-  color: blueviolet;
-  animation: appear 2.6s infinite; /* La animación 'appear' dura 2 segundos y se repite infinitamente */
-}
-
 .aviso {
   color: #fff;
   display: flex;
