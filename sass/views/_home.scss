@@ -101,3 +101,27 @@
 
     }
 }
+.cartas{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+.card{
+    margin-top: .5rem;     
+}
+@media (min-width: 766px) {
+    /* Estilos para dispositivos móviles */
+    .cartas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        & .card{
+            padding: 1rem;
+        }
+    }
+    
+}
