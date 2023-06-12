@@ -83,7 +83,7 @@ footer {
 }
 
 .subtitulo {
-  margin: 2rem;
+  margin: 1rem;
   text-align: center;
 }
 
@@ -95,6 +95,38 @@ footer {
   font-size: 10rem; /* Span */
 }
 
+@media (min-width: 740px) {
+  /* Estilos para dispositivos móviles */
+  .contenedor-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-hero img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+/* Span */
+.simbolo {
+  font-size: 8rem;
+  animation: appear 3.6s infinite;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .aviso {
   color: #fff;
   display: flex;
@@ -104,70 +136,15 @@ footer {
   background-color: blueviolet;
 }
 .aviso h2 {
-  text-align: center;
-  margin-top: 2rem;
-}
-.aviso h4 {
-  text-align: center;
-  margin: 2rem;
-}
-
-@media (max-width: 767px) {
-  /* Estilos para dispositivos móviles */
-  .contenedor-hero {
-    max-width: 100%;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos para tabletas */
-  .contenedor-hero {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (min-width: 1024px) {
-  /* Estilos para escritorio */
-  .contenedor-hero {
-    display: flex;
-    flex-direction: row;
-  }
-}
-/* Span */
-.simbolo {
-  font-size: 8rem;
-  animation: appear 3.6s infinite; /* La animación 'appear' dura 2.6 segundos y se repite infinitamente */
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0; /* Comienza con una opacidad de 0 (invisible) */
-  }
-  50% {
-    opacity: 1; /* Aumenta la opacidad a 1 (totalmente visible) a la mitad de la animación */
-  }
-  100% {
-    opacity: 0; /* Regresa la opacidad a 0 al final de la animación */
-  }
-}
-.aviso {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.aviso h2 {
   line-height: 1rem;
   text-align: center;
   margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .aviso p {
   font-size: larger;
   text-align: center;
+  margin-bottom: 2rem;
   padding-left: 25%;
   padding-right: 25%;
 }
@@ -176,24 +153,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .card {
   margin-top: 0.5rem;
 }
 
-@media (min-width: 766px) {
+@media (min-width: 740px) {
   /* Estilos para dispositivos móviles */
   .cartas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
   .cartas .card {
-    padding: 1rem;
+    margin: 2.6rem;
   }
 }
 /* SERVICIOS */
@@ -273,7 +246,7 @@ svg {
   }
 }
 .row img {
-  padding: 4rem;
+  padding: 1rem;
 }
 
 @media (max-width: 575px) {
