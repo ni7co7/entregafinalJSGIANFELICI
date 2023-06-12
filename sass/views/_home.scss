@@ -5,11 +5,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, red, blue);
+    background: linear-gradient(to right, $primaryl-color, green );
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    object-fit: contain;
 }
 .subtitulo{
-   margin: 1rem;
+  
    text-align: center;
+   margin: 3rem;
 }
 .simbolo{  
     font-size: 10rem; /* Span */
@@ -17,16 +24,12 @@
 @media (min-width: 740px) {
     /* Estilos para dispositivos móviles */
     .contenedor-hero {
-      display: flex;
-      flex-direction: row; 
+      display: grid;
+      grid-template-columns: 50% 50%; 
       justify-content: center;
       align-items: center; 
      
-       img{
-        object-fit: contain;
-        margin: 0;
-        padding: 0;
-       }
+       
     }
 }
 @media (max-width: 767px) {
