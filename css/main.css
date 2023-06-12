@@ -82,58 +82,6 @@ footer {
   background-color: rgb(182, 232, 227);
 }
 
-@media (min-width: 766px) {
-  /* Estilos para dispositivos móviles */
-  .contenedor-hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenedor-hero img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media (max-width: 766px) and (orientation: landscape) {
-  .contenedor-hero img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 100%;
-  }
-  .contenedor-hero img img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media (min-width: 766px) and (max-width: 1200px) {
-  /* Estilos para tabletas */
-  .contenedor-hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .contenedor-hero img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media (min-width: 1200px) {
-  /* Estilos para escritorio */
-  .contenedor-hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .contenedor-hero img {
-    width: 900px;
-  }
-}
 .subtitulo {
   margin: 2rem;
   text-align: center;
@@ -143,6 +91,48 @@ footer {
   font-size: 1.2rem;
 }
 
+.simbolo {
+  font-size: 10rem; /* Span */
+}
+
+.aviso {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+}
+.aviso h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.aviso h4 {
+  text-align: center;
+  margin: 2rem;
+}
+
+@media (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  .contenedor-hero {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tabletas */
+  .contenedor-hero {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  /* Estilos para escritorio */
+  .contenedor-hero {
+    display: flex;
+    flex-direction: row;
+  }
+}
 /* Span */
 .simbolo {
   font-size: 8rem;
@@ -168,15 +158,18 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
 }
 .aviso h2 {
+  line-height: 1rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
-.aviso h4 {
+.aviso p {
+  font-size: larger;
   text-align: center;
-  margin: 2rem;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .cartas {
@@ -340,7 +333,7 @@ h6 {
   color: black;
   min-width: 200px;
   min-height: 30px;
-  border: solid 0.3rem rgba(233, 230, 230, 0.582);
+  border: solid 0.3rem rgba(233, 230, 230, 0.5803921569);
   border-radius: 15%;
   background-color: rgb(182, 232, 227) !important;
   margin-bottom: 1rem;
