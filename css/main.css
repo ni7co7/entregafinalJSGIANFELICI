@@ -168,7 +168,8 @@ img {
 }
 
 .eligenos {
-  background-color: rgba(233, 230, 230, 0.5803921569);
+  color: #fff;
+  background-color: blueviolet;
   padding: 2rem;
 }
 
