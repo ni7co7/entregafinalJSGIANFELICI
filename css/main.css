@@ -43,18 +43,15 @@ footer {
   gap: 1rem;
   color: #fff;
   background-color: black;
-  padding: 1rem;
 }
 
-/*estamos en contacto!*/
 .pie H3 {
-  font-size: xx-large;
   font-weight: bolder;
   margin-right: 10rem;
   padding: 1rem;
 }
 .pie P {
-  font-size: smaller;
+  font-size: larger;
   font-weight: lighter;
   padding-bottom: 2rem;
   margin-left: 0.5rem;
@@ -70,6 +67,7 @@ footer {
   padding-bottom: 2rem;
 }
 .icono-redes p {
+  font-size: x-large;
   margin-left: 1rem;
   margin-right: 0.1rem;
 }
@@ -149,6 +147,11 @@ footer {
   padding-right: 25%;
 }
 
+.eligenos {
+  background-color: rgba(233, 230, 230, 0.5803921569);
+  padding: 2rem;
+}
+
 .cartas {
   display: flex;
   flex-direction: column;
@@ -167,6 +170,13 @@ footer {
   }
   .cartas .card {
     margin: 2.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  /* Estilos para dispositivos móviles */
+  .cartas {
+    display: flex;
+    flex-direction: row;
   }
 }
 /* SERVICIOS */

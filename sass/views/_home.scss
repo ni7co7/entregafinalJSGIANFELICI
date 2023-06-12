@@ -83,6 +83,11 @@
 
         //CARDS//
 
+.eligenos{
+    background-color: $sepia-color;
+    padding: 2rem;
+}
+
 .cartas{
 display: flex;
 flex-direction: column;
@@ -100,5 +105,12 @@ align-items: center;
         & .card{
             margin: 2.6rem;
         }
+    }  
+}
+@media (min-width: 1200px) {
+    /* Estilos para dispositivos móviles */
+    .cartas{
+        display: flex;
+        flex-direction: row;
     }  
 }
