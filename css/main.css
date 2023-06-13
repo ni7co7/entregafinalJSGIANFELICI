@@ -73,67 +73,31 @@ footer {
 }
 
 .contenedor-hero {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, rgba(211, 234, 232, 0.375), green);
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(to bottom, #fff, rgb(182, 232, 227));
 }
-
-img {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.subtitulo {
+.contenedor-hero .subtitulo {
   text-align: center;
-  margin: 3rem;
 }
-
-.simbolo {
-  font-size: 10rem; /* Span */
-}
-
-@media (min-width: 740px) {
-  /* Estilos para dispositivos móviles */
-  .contenedor-hero {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (max-width: 767px) {
-  /* Estilos para dispositivos móviles */
-  .contenedor-hero {
-    max-width: 100%;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos para tabletas */
-  .contenedor-hero {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (min-width: 1024px) {
-  /* Estilos para escritorio */
-  .contenedor-hero {
-    display: flex;
-    flex-direction: row;
-  }
-}
-/* Span */
-.simbolo {
+.contenedor-hero .simbolo {
   font-size: 8rem;
   animation: appear 3.6s infinite;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+@media (min-width: 740px) {
+  .contenedor-hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+/* Span animado */
 @keyframes appear {
   0% {
     opacity: 0;
@@ -145,28 +109,6 @@ img {
     opacity: 0;
   }
 }
-.aviso {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: blueviolet;
-}
-.aviso h2 {
-  line-height: 1rem;
-  text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
-}
-.aviso p {
-  font-size: larger;
-  text-align: center;
-  margin-bottom: 2rem;
-  padding-left: 25%;
-  padding-right: 25%;
-}
-
 .eligenos {
   color: #fff;
   background-color: blueviolet;
@@ -200,6 +142,15 @@ img {
     flex-direction: row;
   }
 }
+.aviso {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+}
+
 /* SERVICIOS */
 .display-1 {
   padding-top: 4rem;
