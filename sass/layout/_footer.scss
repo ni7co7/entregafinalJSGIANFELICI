@@ -1,38 +1,84 @@
 footer{
-   display: grid;
-   grid-template-columns: 50% 50%;
-   gap: 1rem;
-   color: $base-color;
-   background-color: $body-color; 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: $base-color;
+    background-color: $body-color; 
+    padding: 1rem;
+    padding-top: 3rem;
 }
+
+
 
 // /*estamos en contacto!*/
 
 .pie{
     & H3{
         font-weight: bolder;
-        margin-right: 10rem;
-        padding: 1rem;
+      
+        
     }
     & P{
+        padding-top: 2rem;
         font-size: larger;
         font-weight: lighter;
-        padding-bottom: 2rem;
-        margin-left: .5rem;
+       
     }
 }
 .icono-redes{
-    margin-right: .5rem;
-    margin-left: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
     
     & svg {
-        width: auto;
+        width: 25px;
         height: auto;
-        padding-bottom: 2rem;
+        justify-content: right;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-left: 50%;
+        margin-top: 25%;
+        
     }
     & p{
-        font-size: x-large;
-        margin-left: 1rem;
-        margin-right: .1rem;
+        font-size: medium;
+        
+        padding: 1rem;
+        text-align: right;
+        margin-top: 25%;
+      
     }
+}
+@media (min-width:768px){
+    .icono-redes{
+        display: flex;
+        flex-direction: row;
+        
+        
+        margin: 0;
+        padding: 0;
+        
+        
+        svg {
+            
+            padding: 0;
+           
+            margin-left: 5%;
+            
+            
+        }
+        p{
+            font-size: medium;
+            
+            padding: 1rem;
+            text-align: right;
+            
+            
+          
+        }
+    }
+    
+
+
 }

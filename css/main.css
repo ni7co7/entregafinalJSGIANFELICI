@@ -14,10 +14,7 @@ li:hover {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -40,85 +37,271 @@ header {
 footer {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 1rem;
   color: #fff;
   background-color: black;
+  padding: 1rem;
+  padding-top: 3rem;
 }
 
 .pie H3 {
   font-weight: bolder;
-  margin-right: 10rem;
-  padding: 1rem;
 }
 .pie P {
+  padding-top: 2rem;
   font-size: larger;
   font-weight: lighter;
-  padding-bottom: 2rem;
-  margin-left: 0.5rem;
 }
 
 .icono-redes {
-  margin-right: 0.5rem;
-  margin-left: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .icono-redes svg {
-  width: auto;
+  width: 25px;
   height: auto;
-  padding-bottom: 2rem;
+  justify-content: right;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 50%;
+  margin-top: 25%;
 }
 .icono-redes p {
-  font-size: x-large;
-  margin-left: 1rem;
-  margin-right: 0.1rem;
+  font-size: medium;
+  padding: 1rem;
+  text-align: right;
+  margin-top: 25%;
 }
 
+@media (min-width: 768px) {
+  .icono-redes {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .icono-redes svg {
+    padding: 0;
+    margin-left: 5%;
+  }
+  .icono-redes p {
+    font-size: medium;
+    padding: 1rem;
+    text-align: right;
+  }
+}
 .contenedor-hero {
   margin: 0;
   padding: 0;
+}
+
+.contenedor-hero3 {
+  background: rgb(74, 92, 155);
+  background: linear-gradient(324deg, rgb(74, 92, 155) 35%, rgb(0, 255, 179) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #fff, rgb(182, 232, 227));
+  padding: 2rem;
+  padding-top: 1rem;
 }
-.contenedor-hero .subtitulo {
-  text-align: center;
+.contenedor-hero3 img {
+  opacity: 0.01;
+  width: 25%;
+  height: 25%;
 }
-.contenedor-hero .simbolo {
-  font-size: 8rem;
-  animation: appear 3.6s infinite;
+.contenedor-hero3 h1 {
+  padding: 1rem;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 0.3rem;
+}
+.contenedor-hero3 p {
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xx-large;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+.contenedor-hero3 input {
+  color: rgb(0, 255, 179);
+  font-size: x-large;
+  text-transform: lowercase;
+  font-weight: bolder;
+  padding: 0.2rem;
+  width: 290px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border: solid 2px rgb(0, 255, 179);
+  border-radius: 10px;
+  background-color: rgb(74, 92, 155);
 }
 
-@media (min-width: 740px) {
-  .contenedor-hero {
+@media (min-width: 768px) {
+  .contenedor {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 34% 66%;
+    justify-content: center;
+    align-items: center;
   }
-}
-/* Span animado */
-@keyframes appear {
-  0% {
-    opacity: 0;
+  .contenedor .contenedor-hero {
+    height: 100%;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
   }
-  50% {
+  .contenedor .contenedor-hero3 {
+    border: solid 4px white;
+    border-radius: 5%;
+    padding: 0;
+    background: rgb(74, 92, 155);
+    background: linear-gradient(324deg, rgb(74, 92, 155) 35%, rgb(0, 255, 179) 100%);
+  }
+  .contenedor .contenedor-hero3 img {
     opacity: 1;
   }
-  100% {
-    opacity: 0;
+  .contenedor .contenedor-hero3 h1 {
+    font-size: large;
+    color: rgb(0, 255, 179);
+  }
+  .contenedor .contenedor-hero3 p {
+    font-size: small;
+  }
+  .contenedor .contenedor-hero3 input {
+    padding: 0.1rem;
+    color: rgb(0, 255, 179);
+    border-color: rgb(0, 255, 179);
+    font-size: small;
+    width: 120px;
+    background-color: rgb(74, 92, 155);
+    margin: 1rem;
+  }
+}
+@media (min-width: 948px) {
+  .contenedor .contenedor-hero3 h1 {
+    font-size: larger;
+    color: rgb(0, 255, 179);
+  }
+  .contenedor .contenedor-hero3 p {
+    font-size: medium;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor .contenedor-hero3 h1 {
+    font-size: xx-large;
+  }
+  .contenedor .contenedor-hero3 p {
+    font-size: large;
+  }
+  .contenedor .contenedor-hero3 input {
+    font-size: large;
+  }
+}
+.contenedor-hero2 p {
+  padding: 2rem;
+  font-size: xx-large;
+  letter-spacing: 6px;
+  margin-bottom: 0;
+  background-color: rgba(132, 28, 28, 0.333);
+}
+.contenedor-hero2 .programas {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  padding: 2rem;
+}
+.contenedor-hero2 .programas .programa-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.contenedor-hero2 .programas p {
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  background: none;
+  margin: 0;
+  padding: 0.8rem;
+  color: rgb(155, 74, 74);
+}
+.contenedor-hero2 .programas svg {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgb(155, 74, 74);
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contenedor-hero2 .programas {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .contenedor-hero2 .programas svg {
+    width: 120px;
+    height: 120px;
+    border: 2px solid;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor-hero2 p {
+    color: black;
+    font-size: xx-large;
+    padding: 4rem;
+    padding-top: 5rem;
+    letter-spacing: 0.8rem;
+    line-height: 200%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .contenedor-hero2 .programas .programa-texto p {
+    font-size: x-large;
+    padding: 1.3rem;
+    margin-top: 2rem;
   }
 }
 .eligenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #fff;
-  background-color: blueviolet;
+  background-color: black;
   padding: 2rem;
+}
+.eligenos .display-3 {
+  letter-spacing: 8px;
+  color: aqua;
+}
+.eligenos .display-6 {
+  color: rgb(0, 240, 255);
+}
+.eligenos input {
+  color: rgb(74, 92, 155);
+  font-size: x-large;
+  text-transform: lowercase;
+  font-weight: bolder;
+  padding: 0.2rem;
+  width: 290px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border: solid 2px rgb(74, 92, 155);
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 .cartas {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .card {
@@ -143,14 +326,54 @@ footer {
   }
 }
 .aviso {
-  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
+  color: rgb(74, 92, 155);
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  background-color: rgb(0, 255, 179);
+}
+.aviso .aviso-2 {
+  text-align: right;
+  margin-left: 20%;
+}
+.aviso input {
+  color: rgb(74, 92, 155);
+  font-size: x-large;
+  text-transform: lowercase;
+  font-weight: bolder;
+  padding: 0.2rem;
+  width: 290px;
+  margin-bottom: 3rem;
+  margin-top: 0.2rem;
+  border: solid 2px rgb(74, 92, 155);
+  border-radius: 10px;
+  background-color: transparent;
 }
 
+@media (min-width: 768px) {
+  .aviso p {
+    margin-left: 10%;
+  }
+  .aviso-2 {
+    margin-right: 10%;
+  }
+}
+@media (min-width: 1000px) {
+  .aviso p, .aviso-2 {
+    margin: 0;
+    padding: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .aviso input {
+    margin-top: 2rem;
+  }
+}
 /* SERVICIOS */
 .display-1 {
   padding-top: 4rem;
@@ -176,7 +399,7 @@ svg {
 }
 
 .bg-custom__primario {
-  background-color: rgb(182, 232, 227);
+  background-color: rgba(132, 28, 28, 0.333);
 }
 
 .bg-custom__secundario {
@@ -196,7 +419,7 @@ svg {
   }
 }
 .testimonios h5, .reconocimientos h5 {
-  background-color: rgb(182, 232, 227);
+  background-color: rgba(132, 28, 28, 0.333);
   margin-top: 2rem;
   margin-bottom: 0.4rem;
   padding: 0.5rem;
@@ -262,7 +485,7 @@ svg {
 input {
   font-size: medium;
   text-transform: lowercase;
-  border-color: rgb(182, 232, 227);
+  border-color: rgba(132, 28, 28, 0.333);
   border: none;
   border-bottom: solid;
   background-color: #fff;
@@ -286,6 +509,6 @@ h6 {
   min-height: 30px;
   border: solid 0.3rem rgba(233, 230, 230, 0.5803921569);
   border-radius: 15%;
-  background-color: rgb(182, 232, 227) !important;
+  background-color: rgba(132, 28, 28, 0.333) !important;
   margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */
