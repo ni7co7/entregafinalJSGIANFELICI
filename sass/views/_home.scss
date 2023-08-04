@@ -19,14 +19,14 @@
     padding: 2rem;
     padding-top: 1rem;
     img{
-        opacity: .01;
+        
         width: 25%;
         height: 25%;
     }
  
     h1{
         padding: 1rem;
-        color: $body-color;
+        color:#fff;
         font-weight: bolder;
         letter-spacing: .3rem;
     }
@@ -73,8 +73,9 @@
         .contenedor-hero3{
             border: solid 4px white;
             border-radius: 5%;
-            padding: 0;
+            padding: 4rem;
             img{
+               
                 opacity: 1;
             }
             
@@ -85,11 +86,12 @@
            
       
             h1{
+                padding: 2rem;
                 font-size: large;
-                color: $primary-verde;
+                color: white;
                 
             }
-            p{
+            p{  padding: .5rem;
                 font-size: small;
                 
             }
@@ -115,7 +117,7 @@
            
             h1{
                 font-size: larger;
-                color: $primary-verde;
+                color:#fff;
                 
             }
             p{
@@ -157,14 +159,82 @@
         
 
 }
-.contenedor-hero2{
+
+.carta-box {
+    
+  
+    
+   
+    position: relative;
+    perspective: 1000px;
+   
+  }
+  
+  .carta-box:hover .carta {
+      transform: rotateY(180deg);
+     
+  }
+  
+  .carta {
+    padding: 4rem;
+    width: 100%;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+    background-color: $primary-color;
+  }
+  
+  .cara {
+    position: absolute;
+    backface-visibility: hidden;
     p{
-        padding: 2rem;
-        font-size: xx-large;
+        padding: 1rem;
+        text-align: center;
+        font-size: x-large;
+        line-height: 3rem;
+       margin-top: 0;
         letter-spacing: 6px;
+       
+        margin-left: 6rem;
+        margin-right: 8rem;
+        
+    }
+   }
+  
+  .cara.detras {
+    transform: rotateY(180deg);
+  }
+
+
+/* .css_transform { 
+	
+	border: 1px #000 solid;
+	background-color: rgba(255,245,0,0.5);
+	line-height: 200px;
+	text-align:center;
+
+	transform: rotateY(180deg);
+	transform-origin: 50% 50% 0px;
+	animation: T-animation 3s linear normal;
+    backface-visibility: hidden;
+ } 
+ @keyframes T-animation {
+	0% {
+		transform: rotateY(-180deg);
+	}
+	100% {
+		transform: rotateY(180deg);
+	}
+} */
+
+.contenedor-hero2{
+/*     p{
+        padding: 2rem;
+       
+        letter-spacing: 4px;
         margin-bottom: 0;
         background-color: $primary-color;
-    }
+    } */
     
     .programas{
         display: grid;
@@ -239,25 +309,48 @@
     
 
 }
+
+
 @media (min-width:1200px){
     .contenedor-hero2{
-        p{  
+       /*  p{  
             color: black;
-            font-size: xx-large;
+            font-size: x-large;
             padding: 4rem;
             padding-top: 5rem;
             letter-spacing: .8rem;
             line-height: 200%;
             padding-left:20% ;
             padding-right:20% ;
-        }
-        .programas{
-            .programa-texto p{
-                font-size: x-large;
-                padding: 1.3rem;
-                margin-top: 2rem;
+        } */
+        
+
+            .programas{
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+               
+              
+                svg{
+                    
+                    width: 90px;
+                    height: 90px;
+                    border: 2px solid;
+                    padding: .5rem;
+                    
+                    border-radius: 50%;
+                    
+                   
+                    
+                }
             }
-        }
+            .programa-texto p{
+                margin-top: -1rem;
+                font-size: large;
+                padding: 1.3rem;
+                
+            }
+        
         
     }
  
