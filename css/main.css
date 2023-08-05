@@ -236,9 +236,9 @@ footer {
 }
 .cara p {
   padding-right: 1rem;
-  font-size: large;
+  font-size: medium;
   line-height: 1rem;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 }
 
 .cara.detras {
