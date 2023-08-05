@@ -122,7 +122,7 @@ footer {
   padding: 0.5rem;
   color: black;
   font-weight: bolder;
-  font-size: x-large;
+  font-size: larger;
   letter-spacing: 0.3rem;
 }
 .contenedor-hero3 p {
@@ -134,7 +134,7 @@ footer {
   margin-bottom: 0;
 }
 .contenedor-hero3 input {
-  color: rgb(0, 255, 179);
+  color: black;
   font-size: medium;
   text-transform: lowercase;
   font-weight: lighter;
@@ -142,9 +142,9 @@ footer {
   width: 125px;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  border: solid 2px rgb(0, 255, 179);
+  border: solid 2px black;
   border-radius: 10px;
-  background-color: rgb(74, 92, 155);
+  background-color: rgba(0, 255, 251, 0.284);
 }
 
 @media (min-width: 768px) {

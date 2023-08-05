@@ -31,7 +31,7 @@
         padding: .5rem;
         color:black;
         font-weight: bolder;
-        font-size: x-large;
+        font-size: larger;
         letter-spacing: .3rem;
     }
     p{   
@@ -43,7 +43,7 @@
         margin-bottom: 0;
     }
     input{
-        color: $primary-verde;
+        color: black;
         font-size: medium;
         text-transform: lowercase;
         font-weight: lighter;
@@ -52,11 +52,11 @@
         margin-bottom: 1rem;
         margin-top: 2rem;
        
-        border: solid 2px $primary-verde ;
+        border: solid 2px black ;
         
       
         border-radius: 10px;
-        background-color: $primary-azul;
+        background-color: rgba(0, 255, 251, 0.284),   ;
     }
     
 }
