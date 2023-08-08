@@ -70,17 +70,46 @@
     
   </header>
 
+
+
+  
 <main>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const miImagen = document.getElementById("miImagen");
+      const transformaciones = ["zoom-normal", "zoom-in", "zoom-out", "posicion-normal", "posicion-derecha", "posicion-abajo"];
+      let indiceTransformacion = 0;
+  
+      miImagen.addEventListener("mouseover", () => {
+      // Alternar entre las diferentes transformaciones
+      miImagen.classList.remove(transformaciones[indiceTransformacion]);
+      indiceTransformacion = (indiceTransformacion + 1) % transformaciones.length;
+      miImagen.classList.add(transformaciones[indiceTransformacion]);
+    });
+
+    // Reiniciar la transformación cuando el mouse se aleja de la imagen
+    miImagen.addEventListener("mouseout", () => {
+      miImagen.classList.remove(transformaciones[indiceTransformacion]);
+      indiceTransformacion = 0;
+      miImagen.classList.add(transformaciones[indiceTransformacion]);
+    });
+    });
+  </script>
+  
+  
   <div class="contenedor" >
+  
 
     <div class="contenedor-hero">  
-      <div class="img-fluid">
-        <img class="zoom-image" src="img/casa verde.jpg" id="zoom-image" alt="imagen de casa y jardín">
+      <div >
+        <img class="img-fluid"  src="img/casa verde.jpg" id="miImagen" alt="imagen de casa y jardín">
       </div>
-    </div>
+    </div> 
     
     <div class="contenedor-hero3" >
-      <img class="zoom-image" src="img/logoblur.png" alt="logo">
+    <!--   <img src="img/logoblur.png" alt="logo"> -->
       <h1 class="display-1 text-center" >Architecture Services</h1>
       <p class="display-6 text-center" >
         MG STUDIO is a leading AutoCAD drafting and rendering outsourcing services providers. Our goal is to partner with you complementing your work team with our services.
@@ -91,22 +120,7 @@
     </div>
     
   </div>
- <!--  <div style="position: relative;perspective: 500px;-webkit-perspective: 500px">
-    <div class="css_transform">
-      <div class="frente">
-        <p >
-          Based on your idea, interests and desires, we´ll work together to acomplish all the instances of your proyect.
-        </p>
-      </div>
-      
-      <div class="reverso">
-        <p >
-          Based on your idea, interests and desires, we´ll work together to acomplish all the instances of your proyect.
-        </p>
-      </div>
-    </div>
-    
-  </div> -->
+
 
   <div class="carta-box">
     <div class="carta">    
