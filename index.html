@@ -76,21 +76,21 @@
 <main>
 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const miImagen = document.getElementById("miImagen");
-      const transformaciones = ["zoom-normal", "zoom-in", "zoom-out", "posicion-normal", "posicion-derecha", "posicion-abajo"];
-      let indiceTransformacion = 0;
-  
-      miImagen.addEventListener("click", () => {
-        // Alternar entre las diferentes transformaciones
-        miImagen.classList.remove(transformaciones[indiceTransformacion]);
-        indiceTransformacion = (indiceTransformacion + 1) % transformaciones.length;
-        miImagen.classList.add(transformaciones[indiceTransformacion]);
-      });
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const miImagen = document.getElementById("miImagen");
+    const transformaciones = ["zoom-normal", "zoom-in", "zoom-out", "posicion-normal", "posicion-derecha", "posicion-abajo"];
+    let indiceTransformacion = 0;
+
+    miImagen.addEventListener("click", () => {
+      // Alternar entre las diferentes transformaciones
+      miImagen.classList.remove(transformaciones[indiceTransformacion]);
+      indiceTransformacion = (indiceTransformacion + 1) % transformaciones.length;
+      miImagen.classList.add(transformaciones[indiceTransformacion]);
     });
-  </script>
-  
+  });
+</script>
+
   
   <div class="contenedor" >
   
