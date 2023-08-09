@@ -139,13 +139,20 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .contenedor-hero img {
-    width: 100%;
-    height: 84vh;
+  .contenedor {
+    display: grid;
+    grid-template-columns: 66% 33%;
+  }
+  .contenedor .contenedor-hero {
+    width: 598px;
+    height: 414px;
+  }
+  .contenedor .contenedor-hero img {
+    height: 414px;
   }
 }
 .contenedor-hero3 {
-  background: linear-gradient(180deg, rgb(207, 140, 175) 50%, rgba(0, 255, 179, 0.312) 90%, rgba(255, 204, 0, 0.312) 0%);
+  background: linear-gradient(180deg, rgb(140, 207, 206) 30%, rgba(10, 71, 157, 0.671) 90%, rgba(21, 10, 113, 0.995) 40%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,13 +162,13 @@ footer {
 }
 .contenedor-hero3 h1 {
   padding: 0.5rem;
-  color: #0b0a0a;
+  color: #fff;
   font-weight: bolder;
-  font-size: larger;
+  font-size: xx-large;
   letter-spacing: 0.3rem;
 }
 .contenedor-hero3 p {
-  color: #0b0b0b;
+  color: #fff;
   font-size: medium;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -288,7 +295,6 @@ footer {
 .carta-box {
   position: relative;
   perspective: 1000px;
-  padding-top: 39.7rem;
 }
 
 .carta-box:hover .carta {
@@ -299,6 +305,7 @@ footer {
 
 .carta {
   padding: 1rem;
+  padding-bottom: 1rem;
   margin: 0;
   width: 100%;
   height: 100px;
@@ -334,7 +341,7 @@ footer {
     transform: rotateY(180deg);
   }
   .carta {
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     height: 300px;
     transform-style: preserve-3d;
@@ -352,36 +359,16 @@ footer {
     line-height: 3rem;
     margin-top: 4.4rem;
     letter-spacing: 6px;
-    margin-left: 1rem;
+    margin-left: 0;
     margin-right: 1rem;
   }
   .cara.detras {
     transform: rotateY(180deg);
   }
   .cara.detras p {
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 }
-/* .css_transform { 
-
-	border: 1px #000 solid;
-	background-color: rgba(255,245,0,0.5);
-	line-height: 200px;
-	text-align:center;
-
-	transform: rotateY(180deg);
-	transform-origin: 50% 50% 0px;
-	animation: T-animation 3s linear normal;
-    backface-visibility: hidden;
- } 
- @keyframes T-animation {
-	0% {
-		transform: rotateY(-180deg);
-	}
-	100% {
-		transform: rotateY(180deg);
-	}
-} */
 .contenedor-hero2 {
   /*     p{
           padding: 2rem;

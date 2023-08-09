@@ -82,19 +82,12 @@
       const transformaciones = ["zoom-normal", "zoom-in", "zoom-out", "posicion-normal", "posicion-derecha", "posicion-abajo"];
       let indiceTransformacion = 0;
   
-      miImagen.addEventListener("mouseover", () => {
-      // Alternar entre las diferentes transformaciones
-      miImagen.classList.remove(transformaciones[indiceTransformacion]);
-      indiceTransformacion = (indiceTransformacion + 1) % transformaciones.length;
-      miImagen.classList.add(transformaciones[indiceTransformacion]);
-    });
-
-    // Reiniciar la transformación cuando el mouse se aleja de la imagen
-    miImagen.addEventListener("mouseout", () => {
-      miImagen.classList.remove(transformaciones[indiceTransformacion]);
-      indiceTransformacion = 0;
-      miImagen.classList.add(transformaciones[indiceTransformacion]);
-    });
+      miImagen.addEventListener("click", () => {
+        // Alternar entre las diferentes transformaciones
+        miImagen.classList.remove(transformaciones[indiceTransformacion]);
+        indiceTransformacion = (indiceTransformacion + 1) % transformaciones.length;
+        miImagen.classList.add(transformaciones[indiceTransformacion]);
+      });
     });
   </script>
   
