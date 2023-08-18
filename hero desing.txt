@@ -1,0 +1,4 @@
+1 cambios a contenedor:
+  la imagen:hace zoom out o in de las posiciones de las imagenes que cambian con click o mouse pointer position
+  contenedor-hero3 hacer forma de solapa de carpeta o de sobre. rectangulo 30x70(frente color oscuro. ocultar descripcion ) 
+2 cambios a carbox atras ( poner cards de la casa? o no)
