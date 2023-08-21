@@ -9,6 +9,7 @@
 let usuarios = [];
 
 
+
 // Corrobora los usuarios anteriores
 
 const UsuariosGuardados = localStorage.getItem("usuarios");
@@ -32,8 +33,11 @@ function calcularMetrosCuadrados(){
 
 
     const metrosCuadrados = ancho * largo;
+
+
+    const now = luxon.DateTime.local();
+    console.log(now.toLocaleString());
    
-    
 
     switch (desarrollo){
         case "sketchUp":

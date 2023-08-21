@@ -1,6 +1,8 @@
        //MAIN//
 
 .contenedor-hero{
+    background-image: url(/img/logoblur.png);
+    background-size: 5%;
    
     position: relative;
     width: 100%;
@@ -11,13 +13,10 @@
     img{
         overflow: hidden;
         position: absolute;
-       
-        
         width: 100%;
-        height: 50vh;
-       
-        
+        height: 100%;
         transition: transform 2.2s ;
+        
        
     }
     /* Clases para diferentes transformaciones */
@@ -38,18 +37,23 @@
 
   .posicion-normal {
    
-    transform: scale(2.1);
+    transform: scale(1.2);
   }
 
    .posicion-derecha {
-    right:  20%;
-    top: -30%;
-    transform: scale(2.5);
+    /* right:  5%; */
+    /* top: 5%;
+    transform: scale(2.2); */
+  }
+  .posicion-izquierda {
+    /*  left:  3%; */
+   /*  top: 5%; 
+    transform: scale(2.2); */
   }
 
   .posicion-abajo {
-    top: -10%;
-    transform: scale(1.5);
+    /* bottom:  10%;
+    transform: scale(2.2); */
   } 
 }
 
@@ -60,6 +64,7 @@
     
      background: rgb(74, 92, 155);
     background: linear-gradient(324deg,  rgb(7, 81, 105)40%, rgb(40, 168, 218) 15%);
+    box-shadow: inset 1px 1px 20px rgb(18, 1, 83);
     
     display: flex;
     flex-direction: column;
@@ -108,7 +113,7 @@
 @media (min-width:768px){
     .contenedor{
         margin: 0;
-        padding: 0;
+     
 
        display: grid;
        grid-template-columns: 66% 33%;
@@ -122,9 +127,11 @@
         }
 
         .contenedor-hero3{
+            margin: 0;
+            padding: 4rem;
             
           
-            margin-right: -.5rem;
+           
             h1{
                 font-size: xx-large;
             }
@@ -214,162 +221,95 @@
 
 
 @media (min-width:948px){
+
     .contenedor{
         .contenedor-hero3{
-            margin-right: -.7rem;
-          
-
            
+          
             h1{
                 font-size: xx-large;
                 color:#fff;
-                
             }
+
             p{  
                 margin-top: 6rem;
                 font-size: x-large;
-                
             }
+
             input{
                 margin-top: 8rem;
             }
         }
-       
-
     }
-  
-
 } 
+
+
+
 @media (min-width:1200px){
     .contenedor{
         .contenedor-hero3{
-            margin-right: -.85rem;
-           
-           
-            
-    
-    
+            margin-right: -1rem;
         }
-
     }
-   
-        
-        
-
 } 
-.carta-box {
-    
-  
-    
-   
-    position: relative;
-    perspective: 1000px;
-    
-   
-   
-  }
-  
-  .carta-box:hover .carta {
-      transform: rotateY(180deg);
-      margin: 0;
-      padding: 0;
-     
-  }
-  
-  .carta {
-    padding: 1rem;
-    margin: 0;
-    
-    width: 100%;
-    height: 100px;
-    transform-style: preserve-3d;
-    transition: all 0.5s linear;
-    background-color: $primary-color;
-  }
-  
-  .cara {
-    position: absolute;
-    backface-visibility: hidden;
-    p{
-        
-        padding-right: 1rem;
-       
-        
-       
-        font-size: medium;
-        line-height: 1rem;
-       
-        letter-spacing: 4px;
-      
-        
-    }
-   }
-  
-  .cara.detras {
-    p{ 
-       
-      
 
-     padding: 1rem;
-       
-    }
-    transform: rotateY(180deg);
-    
-}
-
-@media(min-width:768px){
     .carta-box {
-    
-  
-    
-   
         position: relative;
         perspective: 1000px;
        
-      }
-      
+    }
       .carta-box:hover .carta {
-          transform: rotateY(180deg);
+        transform: rotateY(180deg);
          
-      }
-      
+    }
       .carta {
-        padding: 2rem;
-        width: 100%;
-        height: 300px;
+     
+       
         transform-style: preserve-3d;
         transition: all 0.5s linear;
         background-color: $primary-color;
-      }
+        backface-visibility: hidden;
+    }
       
-      .cara {
+    .cara {
         position: absolute;
         backface-visibility: hidden;
+        padding: 2rem;
         p{
-            padding-top: 0;
+            
             text-align: center;
             font-size: x-large;
             line-height: 3rem;
-            margin-top: 3.4rem;
+           
             letter-spacing: 6px;
            
-            margin-left: 1rem;
-            margin-right: 1rem;
-            
         }
-       }
+    }
       
-      .cara.detras {
+    .cara-detras {
+        
+        margin: 0;
+            padding: 2rem;
+        background-color: $primary-verde;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
         p{
             
-            padding-top: 2rem;
+            text-align: center;
+            font-size: x-large;
+            line-height: 3rem;
+           
+            letter-spacing: 6px;
+           
         }
-       
-        transform: rotateY(180deg);
-      }
+      
+     
+    }
 
-}
 
+
+
+  
 
 /* .css_transform { 
 	
@@ -393,6 +333,7 @@
 } */
 
 .contenedor-hero2{
+   
 /*     p{
         padding: 2rem;
        
@@ -402,6 +343,8 @@
     } */
     
     .programas{
+      
+        
         display: grid;
         grid-template-columns: 50% 50%;
         justify-content: center;
@@ -409,6 +352,7 @@
         
         
         background-color: aqua;
+         box-shadow: inset 1px 1px 20px rgb(143, 136, 170);
       
         padding: 2rem;
 
@@ -418,7 +362,7 @@
             justify-content: center;
             align-items: center;
             
-            margin-right: 1rem;
+          
         }
         p{
             text-align: center;
@@ -430,10 +374,6 @@
             color: $primary-rojo1;
         }
        
-        
-    
-        
-       
         svg{
             
             width: 80px;
@@ -442,17 +382,14 @@
             border-radius: 50%;
             padding: .5rem;
             margin: 0;
-            
-           
-            
         }
-    
     }
 }
 
 @media (min-width:768px){
     .contenedor-hero2{
         .programas{
+          
             display: grid;
             grid-template-columns: 33% 33% 33%;
           
@@ -462,17 +399,10 @@
                 height: 120px;
                 border: 2px solid;
                 padding: 1rem;
-                
                 border-radius: 50%;
-                
-               
-                
             }
         }
-
     }
-    
-
 }
 
 
@@ -502,63 +432,58 @@
                     height: 90px;
                     border: 2px solid;
                     padding: .5rem;
-                    
                     border-radius: 50%;
-                    
-                   
-                    
                 }
             }
             .programa-texto p{
                 margin-top: -1rem;
                 font-size: large;
                 padding: 1.3rem;
-                
             }
-        
-        
     }
  
 }
   
 
 .formulario-calculadora{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
     justify-content: center;
     align-items: center;
     height: 480px;
-    font-size: x-large;
+    font-size: xx-small;
     text-transform: lowercase;
-    margin: 0rem;
-    padding: 0rem;
+    margin: 3rem;
+    padding: 4rem;
+    background-color: $primary-color;
+   
+    .campo{
+        font-size: large;
+        border: $primary-cyan;
+        color: $body-color;
+        background-color: $primary-cyan;
+        border-radius: 100px;
+        margin: .5rem;
+        padding: .5rem;  
+    }
     select {
         background: transparent;
-        border: none;
-        font-size: 20px;
+        border-radius: 10px ;
         height: 40px;
         padding: 5px;
         width: 250px;
-    
-       
     }
    
-    .campo{
-        color: $body-color;
-        input{
-            background-color:  $primary-cyan;
-        }
-        
-    }
    
-    .menu-calculadora{
-        margin-top: 4rem;
+   
+/*     .menu-calculadora{
+        margin-top: .5rem;
         border: none;
         display: flex;
         flex-direction: row;
        
         
-    }
+    } */
     .boton-calculadora{
         color: $primary-azul;
         font-size: medium;
@@ -567,16 +492,10 @@
         padding: .2rem;
         width: 120px;
         margin-bottom: 1rem;
-        margin-top: 6rem;
-        
+        margin-top: 2rem;
         border: solid 2px $primary-cyan ;
-       
-      
         border-radius: 10px;
         background-color: transparent;
-
-      
-
     }
 
 }
@@ -602,10 +521,7 @@
     .display-6{
         color: $primary-cyan;
         font-size: large;
-
     }
-
-   
     input{
         color: $primary-azul;
         font-size: medium;
@@ -615,10 +531,7 @@
         width: 120px;
         margin-bottom: 1rem;
         margin-top: 2rem;
-        
         border: solid 2px $primary-azul ;
-       
-      
         border-radius: 10px;
         background-color: transparent;
     }
@@ -629,8 +542,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding-bottom: 2rem;
-   
-
 }
 .card{
     margin-top: .5rem;     

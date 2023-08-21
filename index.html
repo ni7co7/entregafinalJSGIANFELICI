@@ -13,6 +13,10 @@
   <!-- <link rel="stylesheet" href="css/styles.css"> -->
   <!-- Link Sass -->
   <link rel="stylesheet" href="css/main.css">
+  <!-- Luxon -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.4.0/luxon.min.js"></script>
+  <!-- Sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
  <!--  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> -->
@@ -20,10 +24,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
 
+
+
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg transparent-navbar">
+
+   
+    
+
+
+
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg transparent-navbar ">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="img/logoazul3 1.png" alt="logo" width="100px" height="100px">
@@ -69,20 +87,11 @@
     </nav>
     
     
-  </header>
+  </header> 
 
-
-
-  
 <main>
 
-
-
-
-  
   <div class="contenedor" >
-  
-
     <div class="contenedor-hero">  
       <div >
         <img class="img-fluid"  src="img/casa verde.jpg" id="miImagen" alt="imagen de casa y jardín">
@@ -103,26 +112,10 @@
   </div>
 
 
-  <div class="carta-box">
-    <div class="carta">    
-      <div class="cara">
-        <p> Based on your idea, interests and desires, we´ll work together to acomplish all the instances of your proyect.<p>
-     
-      </div>
-      <div class="cara detras">
-        <p>Aca va un simulador de presupuesto que calcula precio en base a tipo de vivienda y cantidad de dormitorios<p>
-      </div>    
-    </div>
-  </div>
 
-  
-  
 
   <div class="contenedor-hero2" >
 
-   
-   
-   
     <div class="programas" >
       
       <div class="programa-texto" >
@@ -199,46 +192,101 @@
   </div>
   
 </main>
-<section 
-<label for="mostrarBtn"></label>
-<button id="mostrarBtn">Mostrar Usuarios</button>
-
-<div id="usuariosContainer" style="display: none;"></div>
+<section>
 
 
-<label for="ancho">Ancho</label>
-<input  id="ancho" type="number"aria-label="ancho" >
+  <div class="carta-box" >
+    <div class="carta">    
+      <div class="cara">
+        <p> Based on your idea, interests and desires, we´ll work together to acomplish all the instances of your proyect.<p>
+     
+      </div>
+      <div class="cara-detras">
+        <p>Aca va un simulador de presupuesto que calcula precio en base a tipo de vivienda y cantidad de dormitorios<p>
+      </div>    
+    </div>
+  </div>
 
-<label for="largo">Largo</label>
-<input  id="largo" type="number"aria-label="largo" >
 
-<label for="desarrollo">Tipo de desarrollo</label>
-<select name="desarrollo" id="desarrollo">
+
+
+
+
+
+
+  <!-- <div class="carta-box">
+    <div class="carta">    
+      <div class="cara">
+        <p> Based on your idea, interests and desires, we´ll work together to acomplish all the instances of your proyect.<p>
+     
+      </div>
+      <div class="cara detras">
+        <p>Aca va un simulador de presupuesto que calcula precio en base a tipo de vivienda y cantidad de dormitorios<p>
+      </div>    
+    </div>
+    <div class="carta1">    
+      <div class="cara1">
+        <p> Based on your idea, interests and desires, we´ll work together to acomplish all the instances of your proyect.<p>
+     
+      </div>
+      <div class="cara detras1">
+        <p>Aca va un simulador de presupuesto que calcula precio en base a tipo de vivienda y cantidad de dormitorios<p>
+      </div>    
+    </div>
+
+    
+  </div> -->
+
+  
+
+
+  
+ 
+<div class="formulario-calculadora">
+
+
+
+  <label class="campo" for="ancho">Ancho</label>
+  <input class="campo"  id="ancho" type="number"aria-label="ancho" >
+
+  <label class="campo"  for="largo">Largo</label>
+  <input class="campo" id="largo" type="number"aria-label="largo" >
+
+  <label class="campo" for="desarrollo">Tipo de desarrollo</label>
+  <select class="boton-calculadora" name="desarrollo" id="desarrollo">
     <option value="sketchUp">sketchUp</option>
     <option value="autoCad">autoCad</option>
     <option value="render3d">render3d</option>
-</select>
+  </select>
 
 <!-- <button type="button" onclick="calcularTiempoYPrecio()">Calcular</button> -->
-<button type="button" onclick="calcularMetrosCuadrados()">Calcular</button>
+  <button type="button" class="boton-calculadora" onclick="calcularMetrosCuadrados()">Calcular</button>
 
-<label for="nombre">nombre</label>
-<input  id="nombre" type="text"aria-label="nombre" >
+  <label class="campo" for="nombre">nombre</label>
+  <input class="campo" id="nombre" type="text"aria-label="nombre" >
+
+  
+  <p id="resultado"></p>
+  <p id="resultado2"></p>
+  <p id="resultado3"></p>
+
+  <label class="campo" for="mostrarBtn"></label>
+  <button class="boton-calculadora" id="mostrarBtn">Mostrar Usuarios</button>
+
+  
+  <div id="usuariosContainer" style="display: none;"></div>
+
+</div>
 
 
-
-
-<p id="resultado"></p>
-<p id="resultado2"></p>
-<p id="resultado3"></p>
-
+</section>
 
 
 
 
 
   
-</section>
+
 
 <section>
   <div class="eligenos">
@@ -302,6 +350,29 @@
   </div>
 </section>
 
+
+<div class="form-container">
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="login-username" placeholder="Username">
+      <input type="password" id="login-password" placeholder="Password">
+      <button type="submit">Login</button>
+    </form>
+    <p id="login-message" class="message"></p>
+  </div>
+  <div class="register-container">
+    <h2>Register</h2>
+    <form id="register-form">
+      <input type="text" id="register-username" placeholder="Username">
+      <input type="password" id="register-password" placeholder="Password">
+      <input type="password" id="register-confirm-password" placeholder="Confirm Password">
+      <button type="submit">Register</button>
+    </form>
+    <p id="register-message" class="message"></p>
+  </div>
+</div>
+
 <footer>
   <div class="pie">
     <h3 class="display-3">Be in touch!</h3>
@@ -332,27 +403,16 @@
   </div>
 </footer>
 
-<!-- Scripts de Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-TTofusq7ZARv5CnM0sfgqGnZRO5i2zw0CKFXl9ZLs+nDj9RHTGQWneYKZAX8z6H4" crossorigin="anonymous">
+
 
 </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const miImagen = document.getElementById("miImagen");
-    const transformaciones = ["zoom-normal", "zoom-in", "zoom-out", "posicion-normal", "posicion-derecha", "posicion-abajo"];
-    let indiceTransformacion = 0;
-
-    miImagen.addEventListener("click", () => {
-      // Alternar entre las diferentes transformaciones
-      miImagen.classList.remove(transformaciones[indiceTransformacion]);
-      indiceTransformacion = (indiceTransformacion + 1) % transformaciones.length;
-      miImagen.classList.add(transformaciones[indiceTransformacion]);
-    });
-  });
-</script>
+<script src="js/hero.js"> </script>
 
 <script src="presupuestoDibujo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/login.js"></script>
 </body>
 
 </html>

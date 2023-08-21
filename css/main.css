@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body {
+  margin: 1rem;
+  box-shadow: 1px 1px 20px rgb(18, 1, 83);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,37 +18,58 @@ li:hover {
   background-color: rgb(182, 232, 227);
 }
 
-header {
-  position: relative;
-  z-index: 1;
+.container-fluid {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+.container-fluid .navbar-brand img {
+  margin-left: 0.7rem;
 }
 
 @media (min-width: 768px) {
-  header {
+  .container-fluid {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .navbar-brand {
-    padding-right: 5rem;
-  }
-  ul {
-    padding-right: 5rem;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-  }
-  li {
-    font-size: larger;
-    font-weight: bold;
-    margin-right: 1.5rem;
-  }
-  li:hover {
-    background-color: rgb(182, 232, 227);
-  }
 }
+/* // Estilos del encabezado
+.container-fluid{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    ul{
+        li{
+
+        }
+        li:hover{
+            background-color: $primary-azul;
+        }
+    }
+
+}
+ */
+/* .navbar-toggler{
+    color: $primary-azul;
+    padding-top: .5rem;
+    margin-bottom: 1rem;
+    background-color: $base-color;
+    border: solid .5rem $primary-azul;
+    border-radius: 20%; 
+
+}
+
+
+ */
 footer {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -102,6 +128,8 @@ footer {
   }
 }
 .contenedor-hero {
+  background-image: url(/img/logoblur.png);
+  background-size: 5%;
   position: relative;
   width: 100%;
   height: 50vh;
@@ -112,7 +140,7 @@ footer {
   overflow: hidden;
   position: absolute;
   width: 100%;
-  height: 50vh;
+  height: 100%;
   transition: transform 2.2s;
 }
 .contenedor-hero .zoom-normal {
@@ -125,21 +153,27 @@ footer {
   transform: scale(1.2);
 }
 .contenedor-hero .posicion-normal {
-  transform: scale(2.1);
+  transform: scale(1.2);
 }
 .contenedor-hero .posicion-derecha {
-  right: 20%;
-  top: -30%;
-  transform: scale(2.5);
+  /* right:  5%; */
+  /* top: 5%;
+  transform: scale(2.2); */
+}
+.contenedor-hero .posicion-izquierda {
+  /*  left:  3%; */
+  /*  top: 5%; 
+   transform: scale(2.2); */
 }
 .contenedor-hero .posicion-abajo {
-  top: -10%;
-  transform: scale(1.5);
+  /* bottom:  10%;
+  transform: scale(2.2); */
 }
 
 .contenedor-hero3 {
   background: rgb(74, 92, 155);
   background: linear-gradient(324deg, rgb(7, 81, 105) 40%, rgb(40, 168, 218) 15%);
+  box-shadow: inset 1px 1px 20px rgb(18, 1, 83);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,7 +212,6 @@ footer {
 @media (min-width: 768px) {
   .contenedor {
     margin: 0;
-    padding: 0;
     display: grid;
     grid-template-columns: 66% 33%;
   }
@@ -190,7 +223,8 @@ footer {
     height: 100vh;
   }
   .contenedor .contenedor-hero3 {
-    margin-right: -0.5rem;
+    margin: 0;
+    padding: 4rem;
   }
   .contenedor .contenedor-hero3 h1 {
     font-size: xx-large;
@@ -274,9 +308,6 @@ footer {
 
 */
 @media (min-width: 948px) {
-  .contenedor .contenedor-hero3 {
-    margin-right: -0.7rem;
-  }
   .contenedor .contenedor-hero3 h1 {
     font-size: xx-large;
     color: #fff;
@@ -291,7 +322,7 @@ footer {
 }
 @media (min-width: 1200px) {
   .contenedor .contenedor-hero3 {
-    margin-right: -0.85rem;
+    margin-right: -1rem;
   }
 }
 .carta-box {
@@ -301,75 +332,41 @@ footer {
 
 .carta-box:hover .carta {
   transform: rotateY(180deg);
-  margin: 0;
-  padding: 0;
 }
 
 .carta {
-  padding: 1rem;
-  margin: 0;
-  width: 100%;
-  height: 100px;
   transform-style: preserve-3d;
   transition: all 0.5s linear;
   background-color: rgba(132, 28, 28, 0.333);
+  backface-visibility: hidden;
 }
 
 .cara {
   position: absolute;
   backface-visibility: hidden;
+  padding: 2rem;
 }
 .cara p {
-  padding-right: 1rem;
-  font-size: medium;
-  line-height: 1rem;
-  letter-spacing: 4px;
+  text-align: center;
+  font-size: x-large;
+  line-height: 3rem;
+  letter-spacing: 6px;
 }
 
-.cara.detras {
+.cara-detras {
+  margin: 0;
+  padding: 2rem;
+  background-color: rgb(0, 255, 179);
+  backface-visibility: hidden;
   transform: rotateY(180deg);
 }
-.cara.detras p {
-  padding: 1rem;
+.cara-detras p {
+  text-align: center;
+  font-size: x-large;
+  line-height: 3rem;
+  letter-spacing: 6px;
 }
 
-@media (min-width: 768px) {
-  .carta-box {
-    position: relative;
-    perspective: 1000px;
-  }
-  .carta-box:hover .carta {
-    transform: rotateY(180deg);
-  }
-  .carta {
-    padding: 2rem;
-    width: 100%;
-    height: 300px;
-    transform-style: preserve-3d;
-    transition: all 0.5s linear;
-    background-color: rgba(132, 28, 28, 0.333);
-  }
-  .cara {
-    position: absolute;
-    backface-visibility: hidden;
-  }
-  .cara p {
-    padding-top: 0;
-    text-align: center;
-    font-size: x-large;
-    line-height: 3rem;
-    margin-top: 3.4rem;
-    letter-spacing: 6px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  .cara.detras {
-    transform: rotateY(180deg);
-  }
-  .cara.detras p {
-    padding-top: 2rem;
-  }
-}
 /* .css_transform { 
 
 	border: 1px #000 solid;
@@ -405,6 +402,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: aqua;
+  box-shadow: inset 1px 1px 20px rgb(143, 136, 170);
   padding: 2rem;
 }
 .contenedor-hero2 .programas .programa-texto {
@@ -412,7 +410,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 1rem;
 }
 .contenedor-hero2 .programas p {
   text-align: center;
@@ -477,35 +474,40 @@ footer {
   }
 }
 .formulario-calculadora {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
   justify-content: center;
   align-items: center;
   height: 480px;
-  font-size: x-large;
+  font-size: xx-small;
   text-transform: lowercase;
-  margin: 0rem;
-  padding: 0rem;
+  margin: 3rem;
+  padding: 4rem;
+  background-color: rgba(132, 28, 28, 0.333);
+  /*     .menu-calculadora{
+          margin-top: .5rem;
+          border: none;
+          display: flex;
+          flex-direction: row;
+
+
+      } */
+}
+.formulario-calculadora .campo {
+  font-size: large;
+  border: rgb(0, 240, 255);
+  color: black;
+  background-color: rgb(0, 240, 255);
+  border-radius: 100px;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 .formulario-calculadora select {
   background: transparent;
-  border: none;
-  font-size: 20px;
+  border-radius: 10px;
   height: 40px;
   padding: 5px;
   width: 250px;
-}
-.formulario-calculadora .campo {
-  color: black;
-}
-.formulario-calculadora .campo input {
-  background-color: rgb(0, 240, 255);
-}
-.formulario-calculadora .menu-calculadora {
-  margin-top: 4rem;
-  border: none;
-  display: flex;
-  flex-direction: row;
 }
 .formulario-calculadora .boton-calculadora {
   color: rgb(74, 92, 155);
@@ -515,7 +517,7 @@ footer {
   padding: 0.2rem;
   width: 120px;
   margin-bottom: 1rem;
-  margin-top: 6rem;
+  margin-top: 2rem;
   border: solid 2px rgb(0, 240, 255);
   border-radius: 10px;
   background-color: transparent;
@@ -766,4 +768,10 @@ h6 {
   border-radius: 15%;
   background-color: rgba(132, 28, 28, 0.333) !important;
   margin-bottom: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
