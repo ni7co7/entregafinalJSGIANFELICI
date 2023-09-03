@@ -1,0 +1,26 @@
+[
+  {
+    "propiedad": {
+      "nombre":"SketchUp",
+      "habitaciones":"2"
+    }
+  },
+  {
+    "propiedad": {
+      "nombre":"SketchUp",
+      "habitaciones":"3"
+    }
+  },
+  {
+    "propiedad": {
+      "nombre":"SketchUp2",
+      "habitaciones":"2"
+    }
+  },
+  {
+    "propiedad": {
+      "nombre":"SketchUp2",
+      "habitaciones":"3"
+    }
+  }
+]
