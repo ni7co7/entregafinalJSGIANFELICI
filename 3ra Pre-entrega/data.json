@@ -1,0 +1,13 @@
+{
+    "combinaciones": {
+        "opcion1-opcionA": "/img/logo.jpg",
+        "opcion1-opcionB": "/img/logoblurblanco.png",
+        "opcion1-opcionC": "/img/casa.jpg",
+        "opcion2-opcionA": "/img/image.png",
+        "opcion2-opcionB": "/img/logorojo.png",
+        "opcion2-opcionC": "/img/barrio.jpg",
+        "opcion3-opcionA": "/img/logoblur.png",
+        "opcion3-opcionB": "/img/logoverde.png",
+        "opcion3-opcionC": "/img/otrologo.png"
+    }
+}
