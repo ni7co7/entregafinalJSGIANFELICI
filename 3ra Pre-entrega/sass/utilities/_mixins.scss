@@ -1,0 +1,10 @@
+@mixin mx-boton-pildora{
+    color: $body-color;
+    min-width: 200px;
+    min-height: 30px;
+    border: solid .3rem $sepia-color;
+    border-radius: 15%;
+    background-color: $primary-color !important;
+    margin-bottom: 1rem;
+}
+

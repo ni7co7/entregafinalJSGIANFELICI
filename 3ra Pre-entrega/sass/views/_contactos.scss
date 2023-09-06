@@ -1,0 +1,30 @@
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    font-size: xx-large;
+    text-transform: lowercase;
+    margin-top: 2rem;
+}
+.campo{
+     margin-left: 2rem;
+   
+    & textarea{
+        border: 0;
+        font-size: x-large;
+        background-color: $base-color;
+        
+    }
+}
+
+input{
+    font-size: medium;
+    text-transform: lowercase;
+    border-color: $primary-color;
+    border:none;
+    border-bottom:solid;
+    background-color: $base-color;
+}

@@ -1,0 +1,24 @@
+//utilities//
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+//base//
+@import 'base/reset';
+@import 'base/typography';
+
+
+//layout//
+@import 'layout/header';
+@import 'layout/footer';
+
+//views//
+@import 'views/home';
+@import 'views/servicios';
+@import 'views/proyectos';
+@import 'views/contactos';
+@import 'views/nosotros';
+//components//
+@import 'components/button';
+
+
+
